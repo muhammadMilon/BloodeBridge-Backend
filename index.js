@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5001;
 // CORS configuration - allow credentials for cookies
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "http://localhost:5173" || "https://bloodbridge-2026.web.app/",
     credentials: true, // Allow cookies to be sent
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
