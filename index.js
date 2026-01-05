@@ -89,7 +89,7 @@ async function startServer() {
     app.listen(PORT, () => {
       console.log(`Server is listening on port ${PORT}`);
       console.log(`Session store: MongoDB`);
-      console.log(`CORS enabled for: ${process.env.CLIENT_URL || "http://localhost:5173"}`);
+      console.log(`CORS enabled for: ${process.env.CLIENT_URL || "http://localhost:5173" "https://bloodbridge-2026.web.app/"}`);
     });
   } catch (error) {
     console.error("Failed to start server:", error);
